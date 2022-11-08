@@ -1,9 +1,5 @@
-import HelloWorld from '../components/hello-world'
+import toast from "react-hot-toast";
 
 export default function Home() {
-  return (
-    <div className="app">
-      <HelloWorld />
-    </div>
-  )
+  return <div className="app"></div>;
 }
