@@ -1,5 +1,5 @@
 import React from "react";
-import { auth, googleAuthProvider } from "../lib/firebase";
+import { auth, googleAuthProvider } from "../../lib/firebase";
 
 export function LoginButton({ }) {
   const loginWithGoogle = async () => {

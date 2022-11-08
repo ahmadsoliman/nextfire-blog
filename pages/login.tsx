@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import AuthContext from "../lib/auth-context";
-import { LoginButton } from "../components/LoginButton";
+import { LoginButton } from "../components/login/LoginButton";
 import { LogoutButton } from "../components/LogoutButton";
 import { UserNameForm } from "../components/UserNameForm";
 
