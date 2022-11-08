@@ -10,9 +10,9 @@ import React, {
 } from "react";
 import debounce from "lodash.debounce";
 
-import AuthContext from "../lib/auth-context";
-import doesUserNameExists from "../lib/doesUserNameExists";
-import { firestore } from "../lib/firebase";
+import AuthContext from "../../lib/auth-context";
+import doesUserNameExists from "../../lib/doesUserNameExists";
+import { firestore } from "../../lib/firebase";
 import UserNameFormMessage from "./UserNameFormMessage";
 
 export function UserNameForm() {
@@ -36,7 +36,7 @@ export function UserNameForm() {
         const batch = firestore.batch();
         batch.set(userDoc, {
           userName: formValue,
-          photoUrl: user.photoURL,
+          photoURL: user.photoURL,
           displayName: user.displayName,
         });
         batch.set(userNameDoc, { uid: user.uid });

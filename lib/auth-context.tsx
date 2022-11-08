@@ -18,7 +18,6 @@ export const AuthContextProvider = ({ children }) => {
     if (user) {
       const ref = firestore.collection("users").doc(user.uid);
       unsubscribe = ref.onSnapshot((doc) => {
-        console.log(doc.data())
         setUserName(doc.data()?.userName);
       });
     }

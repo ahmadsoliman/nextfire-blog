@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import AuthContext from "../lib/auth-context";
 import { LoginButton } from "../components/login/LoginButton";
-import { LogoutButton } from "../components/LogoutButton";
-import { UserNameForm } from "../components/UserNameForm";
+import { LogoutButton } from "../components/login/LogoutButton";
+import { UserNameForm } from "../components/login/UserNameForm";
 
 type Props = {};
 
