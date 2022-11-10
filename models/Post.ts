@@ -5,7 +5,7 @@ export type Post = {
   userName: string;
   published: boolean;
   content: string;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt: number;
+  updatedAt: number;
   heartCount: number;
 };

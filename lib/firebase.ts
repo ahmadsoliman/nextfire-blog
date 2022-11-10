@@ -21,3 +21,11 @@ export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 export const firestore = firebase.firestore();
 export const storage = firebase.storage();
+
+// export classes
+export const Timestamp = firebase.firestore.Timestamp;
+
+// export types
+export type Timestamp = firebase.firestore.Timestamp;
+export type FireStoreDocData =
+  firebase.firestore.QueryDocumentSnapshot<firebase.firestore.DocumentData>;

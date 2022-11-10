@@ -9,9 +9,18 @@ type Props = {
 export default function PostFeed({ posts, admin }: Props) {
   return posts ? (
     <>
-      {posts.map((post) => (
-        <PostItem post={post} key={post.slug} admin={admin} />
-      ))}
+      {!(posts && posts.length) && (
+        <div>
+          No posts at all! WTH?!
+          <button className="">
+            <Link href="/admin">Write one Now!</Link>
+          </button>
+        </div>
+      )}
+      {!!posts &&
+        posts.map((post) => (
+          <PostItem post={post} key={post.slug} admin={admin} />
+        ))}
     </>
   ) : null;
 }

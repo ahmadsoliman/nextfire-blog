@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
         </li>
         {!!userName && (
           <>
-            <li className="rounded-[50%] ml-auto">
+            <li className="rounded-[50%] ml-auto mr-4">
               <Link href="/admin">
                 <button className="bg-blue-700 text-white">Write Posts</button>
               </Link>
